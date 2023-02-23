@@ -2,7 +2,7 @@
 //  підставляє його поточне значення в span#name-output. Якщо інпут порожній, у спані 
 //  повинен відображатися рядок "Anonymous".
 
-const input = document.querySelector('#name-input');
+const inputName = document.querySelector('#name-input');
 
 const greeting = document.querySelector('#name-output');
 
@@ -14,5 +14,5 @@ function inputChange(event) {
     }
 }
 
-input.addEventListener('input', inputChange);
+inputName.addEventListener('input', inputChange);
 

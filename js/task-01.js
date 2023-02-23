@@ -19,7 +19,7 @@ Category: Technologies
 Elements: 5
 */
 
-const categories = document.querySelectorAll('#categories > .item');
+const categories = document.querySelectorAll('.item');
 console.log(`Number of categories: ${categories.length}`);
 
 categories.forEach(element => {
