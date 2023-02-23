@@ -13,7 +13,9 @@ textInput.addEventListener('blur', lengthCheck);
 function lengthCheck(event) {
   if (event.currentTarget.value.length === Number(textInput.dataset.length)) {
     textInput.classList.add('valid');
+    textInput.classList.remove('invalid');
   } else {
     textInput.classList.add('invalid');
+    textInput.classList.remove('valid');
   }
 }
