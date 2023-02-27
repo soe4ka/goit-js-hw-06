@@ -6,8 +6,10 @@ const rangeInput = document.querySelector('#font-size-control');
 
 const testText = document.querySelector('#text');
 
+testText.style.fontSize = `${rangeInput.value}px`;
+
 rangeInput.addEventListener('input', fontSizeChange);
 
-function fontSizeChange(event) {
-    testText.style.fontSize = `${event.currentTarget.value}` + 'px';
+function fontSizeChange() {
+    testText.style.fontSize = `${rangeInput.value}px`;
 }

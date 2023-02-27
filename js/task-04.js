@@ -4,9 +4,9 @@
 
 let counterValue = 0;
 
-const decrementBtn = document.querySelector('button[data-action="decrement"]');
+const decrementBtn = document.querySelector('[data-action="decrement"]');
 
-const incrementBtn = document.querySelector('button[data-action="increment"]');
+const incrementBtn = document.querySelector('[data-action="increment"]');
 
 incrementBtn.addEventListener('click', () => {
   counterValue += 1;

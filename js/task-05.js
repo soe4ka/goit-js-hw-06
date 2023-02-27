@@ -7,11 +7,11 @@ const inputName = document.querySelector('#name-input');
 const greeting = document.querySelector('#name-output');
 
 function inputChange(event) {
-    greeting.textContent = event.currentTarget.value;
+    greeting.textContent = event.currentTarget.value || 'Anonymous';
 
-    if (event.currentTarget.value === '') {
-        greeting.textContent = 'Anonymous';
-    }
+    // if (event.currentTarget.value === '') {
+    //     greeting.textContent = 'Anonymous';
+    // }
 }
 
 inputName.addEventListener('input', inputChange);

@@ -22,9 +22,7 @@ function handleSubmit(event) {
 
   if (email.value === '' || password.value === '') {
     alert('Всі поля повинні бути заповнені!');
-  }
-
-  if (email.value && password.value) {
+  } else if (email.value && password.value) {
     const formObj = {
       Email: email.value,
       Password: password.value,
